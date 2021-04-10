@@ -1,0 +1,725 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    font-family: 'Lato', 'san-serif';
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    background-color: #f9ecdb;
+    display: flex;
+}
+
+.container {
+    width: 1283px;
+    background-image: linear-gradient(180deg, #fe706f, #ff9b31);
+    height: 728px;
+    margin: 0 auto;
+    margin-top: 7rem;
+    border-radius: 30px;
+    box-shadow: 0 8px 8px 0 rgba(103, 151, 255, .11), 12px 12px 18px 0px rgba(103, 151, 255, .11);
+}
+
+.cv_left {
+    float: left;
+    width: 373px;
+}
+
+.img_user {
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 4rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid white;
+}
+
+.img_user img {
+    width: 100%;
+}
+
+.infor_user {
+    width: 100%;
+    height: 5rem;
+    margin-top: 2rem;
+}
+
+.infor_user h2 {
+    text-align: center;
+    color: white;
+}
+
+.infor_user h4 {
+    margin-top: 0.7rem;
+    text-align: center;
+    color: white;
+}
+
+.social_user {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+}
+
+.social_user ul {
+    margin-left: 115px;
+}
+
+.social_user ul li {
+    float: left;
+    margin-left: 10px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+.social_user ul li:hover {
+    background-color: #fdcb6e;
+}
+
+.social_user ul li a i {
+    width: 100%;
+    font-size: 23px;
+    color: white;
+    line-height: 35px;
+    text-align: center;
+}
+
+.cv_left-btnContact {
+    width: 100%;
+    display: flex;
+}
+
+.btn_contact {
+    padding: 10px 15px;
+    margin: auto;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 50px;
+    color: white;
+    background-color: #fe9041;
+    border: 2px solid white;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 8px 8px 0 rgba(103, 151, 255, .11), 0 12px 18px 0 rgba(103, 151, 255, .11);
+}
+
+.btn_contact:hover {
+    background-color: white;
+    color: #fe9a33;
+}
+
+.cv_right {
+    float: right;
+    width: 910px;
+    height: 100%;
+    background-color: white;
+    border-radius: 30px;
+    position: relative;
+}
+
+.tab-content {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    margin-top: 35px;
+}
+
+.tab-pane {
+    display: none;
+    overflow: hidden;
+    animation: anima_tab 0.4s linear;
+}
+
+@keyframes anima_tab {
+    from {
+        height: 0px;
+    }
+    to {
+        height: 100%;
+    }
+}
+
+.tab-pane.active {
+    color: orange;
+    display: block;
+    overflow: hidden;
+}
+
+.tab_pane-header {
+    width: 100%;
+    height: 50px;
+}
+
+.name {
+    font-size: 40px;
+    padding-top: 300px;
+    text-align: center;
+    color: #222222;
+}
+
+.job_title {
+    font-size: 20px;
+    padding-top: 10px;
+    text-align: center;
+    color: #b2bec3;
+}
+
+.tab_pane-header h1 {
+    color: #222222;
+    font-weight: 700;
+}
+
+.tab_pane-header h1 span {
+    color: orange;
+    padding-left: 10px;
+}
+
+.tab_pane-body {
+    padding-top: 20px;
+    height: 600px;
+    width: 100%;
+    overflow: scroll;
+}
+
+.rsm {
+    width: 100%;
+    min-height: 700px;
+}
+
+.edu {
+    width: 48%;
+    float: left;
+}
+
+.edu h3 {
+    color: #222;
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+
+.edu_information {
+    width: 100%;
+    height: 250px;
+}
+
+.eduInfor-left {
+    float: left;
+    width: 30%;
+}
+
+.eduInfor-right {
+    float: right;
+    width: 70%;
+    padding-left: 20px;
+}
+
+.eduInfor-right h4 {
+    color: #222;
+    padding-bottom: 10px;
+}
+
+.eduInfor-right p {
+    color: #636e72;
+}
+
+.eduInfor-left h4 {
+    color: #222;
+    padding-bottom: 10px;
+}
+
+.eduInfor-left span {
+    color: #636e72;
+    padding-left: 1px;
+}
+
+.edu_list {
+    margin-bottom: 20px;
+    height: 100px;
+}
+
+.experience_list {
+    margin-bottom: 20px;
+    height: 100px;
+}
+
+.experience-left {
+    float: left;
+    width: 30%;
+}
+
+.experience-right {
+    float: right;
+    width: 70%;
+    padding-left: 20px;
+}
+
+.experience-right h4 {
+    color: #222;
+    padding-bottom: 10px;
+}
+
+.experience-right p {
+    color: #636e72;
+}
+
+.experience-left h3 {
+    color: #222;
+    padding-bottom: 10px;
+}
+
+.experience-left span {
+    color: #636e72;
+    padding-left: 1px;
+}
+
+.skills {
+    float: right;
+    width: 50%;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+
+.skills h3 {
+    color: #222;
+    padding-bottom: 10px;
+}
+
+.skills h3 span {
+    color: orange;
+}
+
+.design_skills {
+    width: 100%;
+    height: 150px;
+}
+
+.design_skills ul li {
+    float: left;
+    width: 45%;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.design_skills ul li p {
+    width: 100%;
+    padding: 5px 5px;
+    margin-bottom: 2px;
+    text-align: center;
+    border: 2px solid orange;
+    border-radius: 30px;
+    background-color: orange;
+    color: white;
+}
+
+.coding_skills {
+    width: 100%;
+    height: 150px;
+}
+
+.coding_skills ul li {
+    float: left;
+    width: 45%;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.design_skills ul li {
+    cursor: pointer;
+}
+
+.coding_skills ul li {
+    cursor: pointer;
+}
+
+.coding_skills ul li p {
+    width: 100%;
+    padding: 5px 5px;
+    text-align: center;
+    border: 2px solid orange;
+    border-radius: 30px;
+    background-color: orange;
+    color: white;
+}
+
+.knowledges {
+    width: 100%;
+    height: 150px;
+}
+
+.knowledges ul li {
+    float: left;
+    width: 45%;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.knowledges ul li p {
+    width: 100%;
+    padding: 5px 5px;
+    margin-bottom: 2px;
+    text-align: center;
+    border: 2px solid orange;
+    border-radius: 30px;
+    background-color: orange;
+    color: white;
+}
+
+.eds_person {
+    float: left;
+    width: 100%;
+    height: 100px;
+}
+
+.eds_person h3 {
+    font-size: 22px;
+    color: #222;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.eds_person ul li {
+    float: left;
+    width: 49%;
+    height: 180px;
+    border: 2px solid orange;
+    margin-right: 5px;
+    border-radius: 6px;
+    display: flex;
+    overflow: hidden;
+}
+
+.ctf_left {
+    width: 35%;
+    height: 100%;
+    padding: 25px 5px;
+}
+
+.ctf_left img {
+    width: 100%;
+}
+
+.ctf_right {
+    width: 68%;
+}
+.ctf_right h1{
+    font-size: 20px;
+    color: black;
+    margin: 5px 0 10px 20px;
+    
+}
+.ctf_right p{
+    width: 220px;
+    height:100px;
+    margin-left: 20px;
+    color: black;
+    margin-bottom: 5px;
+}
+.ctf_right a{
+    color: black;
+    font-size:20px;
+    margin-left: 20px;
+}
+.ctf_right a:hover{
+    color: orange;
+}
+.intro {
+    width: 100%;
+    float: left;
+    height: 180px;
+    overflow: hidden;
+}
+
+.intro_prg {
+    float: left;
+    width: 50%;
+}
+
+.base_infor {
+    float: right;
+    width: 50%;
+}
+
+.base_infor ul li {
+    width: 100%;
+    padding-bottom: 10px;
+    float: left;
+}
+
+.base_infor ul li h4 {
+    float: left;
+    width: 90px;
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.base_infor ul li span {
+    width: 100%;
+    font-weight: 500;
+}
+
+.jobs {
+    width: 100%;
+}
+
+.jobs-scroll {
+    width: 100%;
+    height: 400px;
+    overflow: scroll;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.jobs h2 {
+    width: 100%;
+    color: #222222;
+    padding-bottom: 10px;
+}
+
+.jobs h2 span {
+    color: orange;
+}
+
+.jobs_show {
+    float: left;
+    width: 100%;
+    min-height: 400px;
+}
+
+.jobs_show ul {
+    padding-top: 10px;
+}
+
+.jobs_show ul li {
+    float: left;
+    width: 50%;
+    min-height: 200px;
+    overflow: hidden;
+    padding-right: 30px;
+}
+
+.jobs_show ul li i {
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+.jobs_show ul li h3 {
+    color: #222;
+    font-size: 20px;
+}
+
+.jobs_show ul li p {
+    color: #636e72;
+}
+
+.tabs {
+    background-color: white;
+    position: absolute;
+    height: 300px;
+    width: 70px;
+    border-radius: 50px;
+    left: 930px;
+    top: 2px;
+    box-shadow: 0 8px 8px 0 rgba(103, 151, 255, .11), 0 12px 18px 0 rgba(103, 151, 255, .11);
+}
+
+.tabs ul {
+    margin-top: 10px;
+}
+
+.tabs ul li {
+    width: 100%;
+    padding: 10px 0 10px 0;
+    text-align: center;
+}
+
+.tabs ul li i {
+    font-size: 35px;
+    cursor: pointer;
+    color: #b2bec3;
+}
+
+.tabs ul li i:hover {
+    color: orange;
+}
+
+.tab-item.active i {
+    color: orange;
+}
+
+.tabs_hide {
+    position: absolute;
+    min-width: 350px;
+    background-color: #fea621;
+    height: 100%;
+    top: 0;
+    right: 0;
+    display: none;
+    animation: animations_modal 0.3s linear;
+}
+
+@keyframes animations_modal {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 350px
+    }
+}
+
+.tab-item p {
+    display: none;
+}
+
+.btn__open-tabs {
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+.btn__open-tabs i {
+    font-size: 30px;
+    color: white;
+    line-height: 50px;
+    margin-left: 10px;
+}
+
+.aleart {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        display: none;
+    }
+    .aleart {
+        width: 100%;
+        margin-top: 30rem;
+        text-align: center;
+        font-size: 25px;
+        font-weight: 600;
+        display: block;
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .cv_left {
+        display: none;
+    }
+    .cv_right {
+        width: 100%;
+        height: 1500px;
+        border-radius: 0;
+        position: relative;
+    }
+    .tabs {
+        display: none;
+    }
+    .tabs_hide {
+        position: absolute;
+        background-image: linear-gradient(180deg, #fe706f, #ff9b31);
+        height: 100%;
+        display: none;
+    }
+    .tabs_hide.active {
+        display: block;
+    }
+    .img_user {
+        width: 150px;
+        height: 150px;
+    }
+    .intro {
+        overflow: none;
+    }
+    .jobs-scroll {
+        height: 100%;
+        overflow: none;
+    }
+    .infor_user {
+        position: relative;
+    }
+    .close-btn {
+        position: absolute;
+        top: 0.3%;
+        right: 3%;
+    }
+    .close-btn i {
+        font-size: 35px;
+        color: white;
+        cursor: pointer;
+    }
+    .btn__open-tabs {
+        display: block;
+    }
+    .btn__open-tabs i {
+        font-size: 35px;
+        text-align: center;
+    }
+    .choose_list {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .choose {
+        width: 100%;
+        cursor: pointer;
+        color: #dfe4ea;
+        font-size: 20px;
+        text-align: center;
+        font-weight: 600;
+        padding: 10px 0;
+    }
+    .choose.active {
+        color: white;
+    }
+    .modal {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: none;
+        background-color: rgba(175, 135, 135, 0.6);
+    }
+    .overlay {
+        position: fixed;
+        width: 674px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(92, 83, 83, 0.6);
+    }
+    .modal.show {
+        display: flex;
+    }
+    .tab_pane-body {
+        overflow: visible;
+        height: 100%;
+    }
+    .jobs-scroll {
+        overflow: visible;
+        height: 100%;
+    }
+}
